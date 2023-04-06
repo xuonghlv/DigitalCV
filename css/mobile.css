@@ -1,0 +1,60 @@
+@media only screen and (max-width:500px) {
+    /* thu nhỏ banner, ẩn avatar */
+  #banner {
+    height: 50vh;
+  }
+  /* hide avtar */
+  .avatar,
+  .name {
+    display: none;
+  }
+
+  /* navbar */
+  .nav-bar-items {
+    width:100%;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  /* Chuyển toàn bộ Grid container thành 1 cột */
+  .info-target,
+  .job-info,
+  .certificate-container {
+    grid-template-columns: 1fr;
+  }
+  #target,
+  #personal-info {
+    width: 100%;
+    padding: 80px 40px;
+    justify-self: right;
+  }
+
+  .grid-item {
+    margin:0 40px;
+  }
+
+  .certificate-item{
+    flex-direction: column;
+    align-items: center;
+    margin:0 40px;
+  }
+  .certificate-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Dự án */
+  .project-container {
+    flex-direction: column;
+    padding-top: 24px;
+    gap: 40px;
+    padding:20px;
+  }
+  /* footer link */
+  .link-label {
+    display: none;
+  }
+}
+
+
+
+

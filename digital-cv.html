@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/font.css" class="">
+    <link rel="stylesheet" href="./css/style.css" class="">
+    <title>Digital-cv</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .flex{
+            display:flex;
+            flex-direction: column;
+            gap:100px;
+        }
+        .grid{
+            display:grid;
+            column-gap: 20px;
+        }
+        .big-grid{
+            gap: 20px;
+            max-width:1400px;
+            margin:50px auto;
+            grid-template-columns: 2fr 1fr 1fr;
+            align-items: stretch;
+            justify-content: stretch;
+            /* grid-template-rows: 3fr 2fr; */
+        }
+
+        .timelines{
+            grid-row: 1/3;
+            grid-column: 3/-1;
+        }
+        .grid-1{
+            grid-template-columns: 50px auto;
+        }
+        .grid-2{
+            grid-template-columns: 1fr 1fr;
+        }
+        .icon{
+            grid-row: 1/3 ;
+            align-self: center;
+            font-size: 28px;
+            justify-self: center;
+            color:#1971c2;
+        }
+        .number{
+            width:50px;
+            height:50px;
+            border:2px solid #1971c2;
+            border-radius: 50%;
+            padding:5px;
+            text-align: center;
+        }
+        .icon-pri{
+            width:50px;
+            height:50px;
+            border:2px solid #1971c2;
+            border-radius: 50%;
+            padding:5px;
+            text-align: center;
+        }
+        .bg-grey{
+            width:100%;
+            padding:20px;
+            background-color: rgba(240, 240, 240, 0.973);
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+        .padding1{
+            padding:10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+        }
+        .padding2{
+            padding:20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid big-grid bg-blue">
+        <div class="mycontainer bg-grey">
+            <h2 class="padding2" style="color:#1971c2;">Goals</h2>
+            <div class="goals">
+                <div class="goal padding1 grid grid-1">
+                    <i class="icon-flag-2 icon"></i>
+                    <h3>Goal 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quas repudiandae, molestiae error vitae tempora, voluptate perferendis in quibusdam ratione nisi numquam voluptatibus, nobis et tenetur ea optio excepturi? Obcaecati?
+                    </p>
+                </div>
+                <div class="goal padding1 grid grid-1">
+                    <i class="icon-flag-2 icon"></i>
+                    <h3>Goal 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quas repudiandae, molestiae error vitae tempora, voluptate perferendis in quibusdam ratione nisi numquam voluptatibus, nobis et tenetur ea optio excepturi? Obcaecati?
+                    </p>
+                </div>
+                <div class="goal padding1 grid grid-1">
+                    <i class="icon-flag-2 icon"></i>
+                    <h3>Goal 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quas repudiandae, molestiae error vitae tempora, voluptate perferendis in quibusdam ratione nisi numquam voluptatibus, nobis et tenetur ea optio excepturi? Obcaecati?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mycontainer bg-grey">
+            <h2 class="padding2" style="color:#1971c2;">Team</h2>
+            <div class="members grid">
+                <div class="member padding1 grid grid-1">
+                    <i class="icon-user-1 icon"></i>
+                    <h3>Member 1</h3>
+                    <p>Name:...</p>
+                </div>
+                <div class="member padding1 grid grid-1">
+                    <i class="icon-user-1 icon"></i>
+                    <h3>Member 1</h3>
+                    <p>Name:...</p>
+                </div>
+                <div class="member padding1 grid grid-1">
+                    <i class="icon-user-1 icon"></i>
+                    <h3>Member 1</h3>
+                    <p>Name:...</p>
+                </div>
+                <div class="member padding1 grid grid-1">
+                    <i class="icon-user-1 icon"></i>
+                    <h3>Member 1</h3>
+                    <p>Name:...</p>
+                </div>
+            </div>
+        </div>
+        <div class="mycontainer bg-grey timelines">
+            <h2 class="padding2" style="color:#1971c2;">Timeline</h2>
+            <div class="timeline flex">
+                <div class="padding1 grid grid-1">
+                    <div class="number icon">01</div>
+                    <h3 class="padding1">Project start</h3>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="padding1 grid grid-1">
+                    <div class="number icon">02</div>
+                    <h3 class="padding1">Project start</h3>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="padding1 grid grid-1">
+                    <div class="number icon">03</div>
+                    <h3 class="padding1">Project start</h3>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="padding1 grid grid-1">
+                    <div class="number icon">04</div>
+                    <h3 class="padding1">Project start</h3>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="padding1 grid grid-1">
+                    <div class="number icon">05</div>
+                    <h3 class="padding1">Project start</h3>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="padding1 grid grid-1">
+                    <div class="number icon">06</div>
+                    <h3 class="padding1">Project start</h3>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="padding1 grid grid-1">
+                    <div class="number icon">07</div>
+                    <h3 class="padding1">Project start</h3>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+        </div>
+        <div class="mycontainer bg-grey">
+            <h2 class="padding2" style="color:#1971c2;">Scopes</h2>
+            <div class="grid grid-2">
+                <div class="padding1">
+                    <h3>IN</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, commodi vero non harum officia doloribus explicabo suscipit deleniti ducimus necessitatibus autem veniam beatae possimus doloremque deserunt perspiciatis aliquam consequuntur quo?</p>
+                </div>
+                <div class="padding1">
+                    <h3>OUT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, commodi vero non harum officia doloribus explicabo suscipit deleniti ducimus necessitatibus autem veniam beatae possimus doloremque deserunt perspiciatis aliquam consequuntur quo?</p>
+                </div>
+            </div>
+        </div>
+        <div class="mycontainer bg-grey">        
+            <h2 class="padding2" style="color:#1971c2;">Primary</h2>
+            <div class="grid">
+                <div class="padding1 grid grid-1">
+                    <div class="icon icon-pri" style="font-weight: bold;">?</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa veritatis ab, exercitationem aperiam atque beatae sint sed debitis natus consequatur. Ipsam, quam nisi maxime eum earum dicta maiores in.</p>
+                </div>
+                <div class="padding1 grid grid-1">
+                    <div class="icon icon-pri" style="font-weight: bold;">?</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa veritatis ab, exercitationem aperiam atque beatae sint sed debitis natus consequatur. Ipsam, quam nisi maxime eum earum dicta maiores in.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

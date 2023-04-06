@@ -1,0 +1,57 @@
+@media only screen and (min-width:501px) and (max-width:768px) {
+/* resize banner image */
+  #banner {
+    height: 50vh;
+  }
+  /* hide avtar */
+  .avatar,
+  .name {
+    display: none;
+  }
+  /* resize target-info container */
+  #target {
+    width: 100%;
+    padding: 80px 40px;
+  }
+  #personal-info {
+    padding: 80px 40px;
+  }
+  /* bố trí lại thông tin nghề nghiệp */
+  .job-info {
+    max-width: 768px;
+    height:170vh;
+    gap: 24px;
+    padding: 24px;
+    display:flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .grid-item{
+    width: 300px;
+    /* align-self: auto; */
+  }
+  .grid-item-oder-2{
+    order:1;
+  }
+  .favorite {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+  }
+  /* Chứng chỉ - Giải thưởng */
+   .certificate h2 {
+    padding: 0 10%;
+  }
+  .certificate-container {
+    padding: 24px 10%;
+    gap: 48px;
+  }
+  .certificate-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificate-item img {
+    width: 100%;
+  }
+}
